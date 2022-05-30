@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomly Generated Pixel Image</title>
+    <style>
+      body {
+        background-image: url("pixelBg.GIF"); 
+        background-repeat: repeat;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../chaos/gifs/Home3d.gif" style="background: lightgreen; cursor: pointer;" onclick="location.href='../mainPage/mainPage.html'">
+    <datalist id="paletteOptions">
+      <option value="Red">
+      <option value="Orange">
+      <option value="Yellow">
+      <option value="Green">
+      <option value="Blue">
+      <option value="Purple">
+      <option value="Cyan">
+      <option value="Pink">
+      <option value="White">
+      <option value="Brown">
+      <option value="Gray">
+      <option value="Default">
+      <option value="All">
+    </datalist>
+    <center>
+      <h2>Randomly Generated Pixel Image</h2>
+      <p>Not every palette option has to be filled out.</p>
+      <form action="javascript:draw()">
+        <table>
+          <tr>
+            <td>Palette 1:</td>
+            <td><input type="text" list="paletteOptions" placeholder="Select color palette" id="palette1"></td>
+            <td>Palette 2:</td>
+            <td><input type="text" list="paletteOptions" placeholder="Select color palette" id="palette2"></td>
+            <td>Palette 3:</td>
+            <td><input type="text" list="paletteOptions" placeholder="Select color palette" id="palette3"></td>
+          </tr>
+          <tr>
+            <td>Palette 4:</td>
+            <td><input type="text" list="paletteOptions" placeholder="Select color palette" id="palette4"></td>
+            <td>Palette 5:</td>
+            <td><input type="text" list="paletteOptions" placeholder="Select color palette" id="palette5"></td>
+            <td>Palette 6:</td>
+            <td><input type="text" list="paletteOptions" placeholder="Select color palette" id="palette6"></td>
+          </tr>
+          <tr>
+            <td>Palette 7:</td>
+            <td><input type="text" list="paletteOptions" placeholder="Select color palette" id="palette7"></td>
+            <td>Palette 8:</td>
+            <td><input type="text" list="paletteOptions" placeholder="Select color palette" id="palette8"></td>
+            <td>Palette 9:</td>
+            <td><input type="text" list="paletteOptions" placeholder="Select color palette" id="palette9"></td>
+          </tr>
+          <tr>
+            <td>Palette 10:</td>
+            <td><input type="text" list="paletteOptions" placeholder="Select color palette" id="palette10"></td>
+            <td>Palette 11:</td>
+            <td><input type="text" list="paletteOptions" placeholder="Select color palette" id="palette11"></td>
+            <td>Palette 12:</td>
+            <td><input type="text" list="paletteOptions" placeholder="Select color palette" id="palette12"></td>
+          </tr>
+          <tr><td><br></td></tr>
+          <tr>
+            <td>Pixel width:</td>
+            <td><input type="text" placeholder="Enter number" id="pxWidth"></td>
+            <td>Pixel height:</td>
+            <td><input type="text" placeholder="Enter number" id="pxHeight"></td>
+          </tr>
+          <tr>
+            <td>Image width:</td>
+            <td><input type="text" placeholder="Enter number" id="imgWidth"></td>
+            <td>Image height:</td>
+            <td><input type="text" placeholder="Enter number" id="imgHeight"></td>
+          </tr>
+          <tr><td>​</td></tr>
+          <tr><td></td><td></td><td></td><td><input type="submit" name="submit"></td></tr>
+          <tr><td><br></td></tr>
+        </table>
+      </form>
+      <canvas id="canvas" width="500" height="500" style="border: 1px solid black; background-color: white;"></canvas>
+      <br>
+      <p id="key">8 11 4 6 1 12 13 7 2 9 3 11 37 59</p>
+    </center>
+    <script src="pixel.js"></script>
+  </body>
+</html>

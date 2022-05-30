@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <style>
+      body {
+        color: white;
+        background-image: url("15puzzleBg.GIF");
+        background-repeat: repeat;
+      }
+      
+      #canvas {
+        border:25px solid black; 
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../chaos/gifs/Home3d.gif" style="background: lightgreen; cursor: pointer;" onclick="location.href='../mainPage/mainPage.html'">
+    <center>
+      <h1 id="header"></h1>
+      <table>
+        <tr>
+          <td>
+            <button onclick="resizeBoard(this)" id="3">3 Puzzle</button>
+            <button onclick="resizeBoard(this)" id="15">15 Puzzle</button>
+            <button onclick="resizeBoard(this)" id="63">63 Puzzle</button>
+            <button onclick="resizeBoard(this)" id="255">255 Puzzle</button>
+            <button onclick="resizeBoard(this)" id="1023">1023 Puzzle</button>
+            <button onclick="resizeBoard(this)" id="4095">4095 Puzzle</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br>
+            <button onclick="scramble()">Scramble the Puzzle</button>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <canvas id="canvas"></canvas>
+      <p id="win">​</p>
+      <p>Use the arrow keys to move the pieces</p>
+      <p>To do: user can upload images to use for the puzzle, instructions on how to solve puzzle</p>
+    </center>
+    <script src="15puzzle.js"></script>
+  </body>
+</html>

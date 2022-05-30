@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low Quality Image Generator</title>
+    <style>
+      body {
+        background-image: url("lowQualityImageBg.GIF");
+        background-repeat: repeat;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../chaos/gifs/Home3d.gif" style="background: lightgreen; cursor: pointer;" onclick="location.href='../mainPage/mainPage.html'">
+    <center>
+      <h1>Low Quality Image Generator</h1>
+      <form action="javascript: resizeImage()">
+        <table>
+          <tr>
+            <td>Choose image:</td>
+            <td><input type="file" id="imageInput" accept="image/*"></td>
+            <td>Pixel size:</td>
+            <td><input type="text" id="pixelSize"></td>
+            <td><input type="submit"></td>
+          </tr>
+        </table>
+      </form>
+      <br>
+      <canvas id="canvas"></canvas>
+    </center>
+    <script src="lowQualityImage.js"></script>
+  </body>
+</html>

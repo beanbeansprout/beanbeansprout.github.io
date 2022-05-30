@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Skin Maker</title>
+    <style>
+      body {
+        background-image: url("mcSkinBg.GIF");
+        background-repeat: repeat;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../chaos/gifs/Home3d.gif" style="background: lightgreen; cursor: pointer;" onclick="location.href='../mainPage/mainPage.html'">
+    <center>
+      <h1>Minecraft Skin Maker</h1>
+      <p>Made by cropping a regular image into a skin.</p>
+      <p>The front of the skin contains the whole image. All other sides contain the whole image wrapped around it.</p>
+      <form action="javascript: makeSkin()">
+        <table>
+          <tr>
+            <td>Choose image:</td>
+            <td><input type="file" id="imageInput" accept="image/*"></td>
+            <td><input type="submit"></td>
+          </tr>
+        </table>
+      </form>
+      <p id="notOption"></p>
+      <br>
+      <canvas id="cropCanvas" width="64" height="64"></canvas>
+      <br>
+      <br>
+      <p>Preview of front:</p>
+      <canvas id="frontCanvas" width="16" height="32"></canvas>
+    </center>
+    <script src="mcSkinMaker.js"></script>
+  </body>
+</html>
